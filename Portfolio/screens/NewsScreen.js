@@ -1,14 +1,17 @@
-import { Text, View, } from 'react-native';
+import { Text, View } from 'react-native';
 import { Card } from 'react-native-elements';
+import { ScrollView } from 'react-native-gesture-handler';
+import TheBlackEgg from '../assets/images/The-Black-Egg.jpeg';
 
 const NewsScreen = () => {
     return (
-        <>
+        <ScrollView>
             <Card style={{ height: "100%" }}>
                 <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)' }}>
                     Recently Produced Work:
                 </Card.Title>
                 <Card.Divider />
+                <Card.Image containerStyle={{ height: 300, flex: 1 }} source={TheBlackEgg} />
                 <View style={{ backgroundColor: 'rgb(244, 242, 242)' }}>
                     <Text>Title: "The Black Egg"</Text>
                     <Text>Medium: Mixed Media, Ashes on Watercolor Paper</Text>
@@ -27,7 +30,7 @@ const NewsScreen = () => {
                     <Text>November 11th - December 5th 2022</Text>
                 </View>
             </Card>
-        </>
+        </ScrollView>
     )
 };
 

@@ -1,11 +1,13 @@
 import { Text, View } from 'react-native';
 
 const PortfolioScreen = () => {
-    <View>
-        <Text>
-            This is the portfolio screen!
-        </Text>
-    </View>
+    return (
+        <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center' }}>
+            <Text>
+                This is the portfolio screen!
+            </Text>
+        </View>
+    )
 };
 
 export default PortfolioScreen;

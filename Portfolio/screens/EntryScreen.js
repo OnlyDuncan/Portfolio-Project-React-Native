@@ -1,13 +1,26 @@
 import { ImageBackground, Text, View } from 'react-native';
+import { Card } from 'react-native-elements';
 import theBlackEgg from '../assets/images/The-Black-Egg.jpeg';
 
 const EntryScreen = () => {
     return (
         <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center' }}>
             <ImageBackground source={theBlackEgg} style={{ width: '100%', height: '100%' }}>
-                <Text style={{ textAlign: 'center', color: 'white' }}>
-                    This is the entry screen!
-                </Text>
+                <View style={{ flex: 4 }} />
+                <View style={{ flex: 2, opacity: 0.75 }}>
+                    <Card style={{ height: "100%" }}>
+                        <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)' }}>
+                            Recently Produced Work:
+                        </Card.Title>
+                        <Card.Divider />
+                        <View style={{ backgroundColor: 'rgb(244, 242, 242)' }}>
+                            <Text>Title: The Black Egg</Text>
+                            <Text>Medium: Mixed Media, Ashes on Watercolor Paper</Text>
+                            <Text>Size: 22 inches x 16 inches</Text>
+                            <Text>Year: 2022</Text>
+                        </View>
+                    </Card>
+                </View>
             </ImageBackground>
         </View>
     )

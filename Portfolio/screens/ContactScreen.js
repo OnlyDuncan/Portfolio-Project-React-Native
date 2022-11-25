@@ -5,11 +5,11 @@ const ContactScreen = () => {
     return (
         <>
             <Card style={{ height: "100%" }}>
-                <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)' }}>
+                <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)', color: 'white' }}>
                     Contact Me:
                 </Card.Title>
                 <Card.Divider />
-                <View style={{ backgroundColor: 'rgb(244, 242, 242)' }}>
+                <View>
                     <Text>Instagram: duncan.payne.art</Text>
                     <Text>Email: Duncan.C.Payne@gmail.com</Text>
                     <Text>Phone: 1-405-308-9609</Text>

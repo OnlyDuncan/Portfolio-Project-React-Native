@@ -7,13 +7,13 @@ const EntryScreen = () => {
         <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center' }}>
             <ImageBackground source={theBlackEgg} style={{ width: '100%', height: '100%' }}>
                 <View style={{ flex: 4 }} />
-                <View style={{ flex: 2, opacity: 0.75 }}>
+                <View style={{ flex: 2 }}>
                     <Card style={{ height: "100%" }}>
-                        <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)' }}>
+                        <Card.Title style={{ backgroundColor: 'rgb(117, 117, 117)', color: 'white' }}>
                             Recently Produced Work:
                         </Card.Title>
                         <Card.Divider />
-                        <View style={{ backgroundColor: 'rgb(244, 242, 242)' }}>
+                        <View>
                             <Text>Title: The Black Egg</Text>
                             <Text>Medium: Mixed Media, Ashes on Watercolor Paper</Text>
                             <Text>Size: 22 inches x 16 inches</Text>

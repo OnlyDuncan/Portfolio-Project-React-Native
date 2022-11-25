@@ -7,6 +7,7 @@ import { Icon } from 'react-native-elements';
 import Constants from 'expo-constants';
 import EntryScreen from './EntryScreen';
 import AboutScreen from './AboutScreen';
+import ArtScreen from './ArtScreen';
 import ContactScreen from './ContactScreen';
 import NewsScreen from './NewsScreen';
 import PortfolioScreen from './PortfolioScreen';
@@ -81,12 +82,22 @@ const NewsNavigator = () => {
 const PortfolioNavigator = () => {
     const Stack = createStackNavigator();
     return (
-        <Stack.Navigator screenOptions={screenOptions}>
+        <Stack.Navigator
+            initialRouteName='Portfolio'
+            screenOptions={screenOptions}
+        >
             <Stack.Screen
                 name='Portfolio'
                 component={PortfolioScreen}
-                options={() => ({
+                options={({ navigation }) => ({
                     title: 'Portfolio'
+                })}
+            />
+            <Stack.Screen
+                name='Art'
+                component={ArtScreen}
+                options={({ route }) => ({
+                    title: route.params.traditionalPainting.name
                 })}
             />
         </Stack.Navigator>
